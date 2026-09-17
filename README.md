@@ -1,4 +1,4 @@
-# QA
+# Proiect de automatizare mobila - workshop "QA in the age of AI" Gameloft
 Acest repository contine tema individuala pe care am facut-o pentru workshop-ul de QA de la Gameloft.
 Tema a constat din mai multe cerinte de realizare a unor script-uri ce testeaza diferite functionalitati, pe un telefon cu Android.
 Pentru fiecare cerinta am si un README care detaliaza problemele intampinate, precum: gestionarea elementelor dinamice, gestionarea click-urilor intr-un joc facut intr-un motor grafic custom, etc.
