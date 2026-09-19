@@ -1,4 +1,4 @@
-# Proiect Workshop QA - Cerința 3: Joc & Meniuri
+# Cerinta 3: Lansare joc si navigare prin meniuri
 
 Acest folder contine scriptul cu rezolvarea cerinței nr. 3: *Lansează un joc, navighează prin meniuri (Settings/Profile/Help). Notează provocările cu elementele dinamice și delay-urile.*
 
