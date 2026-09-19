@@ -7,3 +7,5 @@ Pentru fiecare cerinta am si un README care detaliaza problemele intampinate, pr
 il instaleaza si il deschide.
 - In folder-ul "Script_joc" se afla un script care lanseaza jocul Asphalt 8 si navigheaza prin meniuri.
 
+Detalii legate de setup se afla in README-ul din folder-ul cerintei 3.
+
