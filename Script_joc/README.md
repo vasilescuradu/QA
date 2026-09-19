@@ -1,6 +1,6 @@
 # Proiect Workshop QA - Cerința 3: Joc & Meniuri
 
-Acest proiect reprezintă rezolvarea cerinței numărul 3 din tema workshop-ului de QA: *Lansează un joc, navighează prin meniuri (Settings/Profile/Help). Notează provocările cu elementele dinamice și delay-urile.*
+Acest folder contine scriptul cu rezolvarea cerinței nr. 3: *Lansează un joc, navighează prin meniuri (Settings/Profile/Help). Notează provocările cu elementele dinamice și delay-urile.*
 
 ## 1. Ce face scriptul
 
@@ -16,19 +16,19 @@ Scriptul automatizează interacțiunea cu jocul **Asphalt 8** și parcurge urmă
 Scriptul funcționează conform așteptărilor într-un flux ideal, însă au fost identificate următoarele provocări generate de elemente dinamice (precum reclamele și pop-up-urile):
 * **Reclame impredictibile:** Uneori apar două reclame consecutiv, alteori doar una. De asemenea, butonul de închidere (X) își schimbă constant poziția (uneori în stânga-sus, alteori în dreapta-sus).
 * **Pop-up-uri inconsistente:** Structura pop-up-urilor diferă masiv (ex: notificările pentru "Car Hunt"). Unele se pot închide cu "X", în timp ce altele necesită selectarea unor opțiuni specifice din ecran, precum "NOT NOW" sau "CHECK IT".
-* **Dependența de rezoluție (Coordonate Relative):** Folosirea coordonatelor fixe (valorile X și Y) pentru a da click înseamnă că scriptul funcționează corect doar pe ecranul dispozitivului curent. Pe alte telefoane cu rezoluții diferite, coordonatele nu se vor mai potrivi.
+* **Dependența de rezoluție:** Folosirea coordonatelor fixe (valorile X și Y) pentru a da click înseamnă că scriptul funcționează corect doar pe ecranul dispozitivului curent. Pe alte telefoane cu rezoluții diferite, coordonatele nu se vor mai potrivi.
 
-## 3. Gestionarea Delay-urilor
+## 3. Gestionarea delay-urilor
 
-Pentru a asigura o rulare stabilă, au fost implementate următoarele pauze (delay-uri):
+Pentru a asigura o rulare stabilă, au fost implementate următoarele delay-uri:
 * **Încărcarea jocului:** Un delay de **25 de secunde** la pornirea inițială pentru a permite încărcarea completă a resurselor grele ale jocului.
 * **Tranzițiile între meniuri:** Între apăsările de butoane s-a folosit un delay de **2-3 secunde**, timp suficient pentru a lăsa animațiile de tranziție ale interfeței să se finalizeze.
 
-## 4. Detalii Setup și Configurare
+## 4. Detalii setup și configurare
 
 Mediul de testare a fost configurat folosind un dispozitiv fizic cu **Android 12**.
 
-### Verificare și Instalare Tool-uri
+### Verificare și instalare tool-uri
 Mai jos se află configurația sistemului și versiunile instalate pentru suita Appium:
 
 ```powershell
@@ -58,10 +58,10 @@ Listing installed plugins (rerun with --verbose for more info)
 - inspector@2026.7.1 [installed (npm)]
 ```
 
-### Conectarea ADB prin Wi-Fi (Wireless Debugging)
-Deoarece nu a fost disponibil un cablu USB, dispozitivul a fost conectat prin rețeaua Wi-Fi locală. 
+### Conectarea ADB prin Wi-Fi - Wireless Debugging
+Deoarece nu am avut un cablu USB, dispozitivul a fost conectat prin rețeaua Wi-Fi locală. 
 1. S-au activat **Opțiunile pentru dezvoltatori**.
-2. S-a activat **Remedierea erorilor wireless (Wireless Debugging)**.
+2. S-a activat **Remedierea erorilor wireless - Wireless Debugging**.
 3. S-a realizat asocierea (pairing) utilizând codul de 6 cifre, urmată de conectarea la portul de depanare:
 
 ```powershell
@@ -90,7 +90,7 @@ PS C:\Users\username> appium --use-plugins=inspector
 [Appium] Appium REST http interface listener started on http://0.0.0.0:4723
 ```
 
-### Capabilități Appium (Desired Capabilities)
+### Capabilități Appium - Desired capabilities
 În script și în Appium Inspector s-au folosit următoarele capabilități pentru atașarea la sesiune:
 
 ```json
