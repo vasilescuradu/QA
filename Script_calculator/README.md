@@ -1,11 +1,11 @@
-# Testare Automată Appium - Aplicația Calculator
+# Testare automată Appium - aplicația Calculator
 
-Acest proiect conține scripturi pentru automatizarea aplicației native Calculator folosind Appium.
+Acest folder conține scripturi pentru automatizarea aplicației native Calculator folosind Appium.
 
 ## Descrierea Fișierelor
 
 * **`script_appium_inspector.py`**
-  Conține rezultatul creat de funcționalitatea “Record & Play”.
+  Conține rezultatul creat de funcționalitatea “Record & Play” din Appium Inspector.
 
 * **`script_complet.py`**
   Conține un script care poate fi rulat pentru a deschide aplicația calculator și a realiza calculul `8+2=10`. 
